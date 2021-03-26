@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UserName = new System.Windows.Forms.Label();
-            this.password = new System.Windows.Forms.Label();
+            this.lbUserName = new System.Windows.Forms.Label();
+            this.lbpassword = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // UserName
+            // lbUserName
             // 
-            this.UserName.AutoSize = true;
-            this.UserName.Location = new System.Drawing.Point(73, 74);
-            this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(75, 17);
-            this.UserName.TabIndex = 0;
-            this.UserName.Text = "UserName";
+            this.lbUserName.AutoSize = true;
+            this.lbUserName.Location = new System.Drawing.Point(73, 74);
+            this.lbUserName.Name = "lbUserName";
+            this.lbUserName.Size = new System.Drawing.Size(75, 17);
+            this.lbUserName.TabIndex = 0;
+            this.lbUserName.Text = "UserName";
             // 
-            // password
+            // lbpassword
             // 
-            this.password.AutoSize = true;
-            this.password.Location = new System.Drawing.Point(73, 138);
-            this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(68, 17);
-            this.password.TabIndex = 1;
-            this.password.Text = "password";
+            this.lbpassword.AutoSize = true;
+            this.lbpassword.Location = new System.Drawing.Point(73, 138);
+            this.lbpassword.Name = "lbpassword";
+            this.lbpassword.Size = new System.Drawing.Size(68, 17);
+            this.lbpassword.TabIndex = 1;
+            this.lbpassword.Text = "password";
             // 
             // txtUserName
             // 
@@ -67,6 +67,7 @@
             this.txtPassword.Location = new System.Drawing.Point(206, 133);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(89, 22);
             this.txtPassword.TabIndex = 3;
             // 
@@ -86,10 +87,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.password);
+            this.Controls.Add(this.lbpassword);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.UserName);
+            this.Controls.Add(this.lbUserName);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -99,8 +100,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label UserName;
-        private System.Windows.Forms.Label password;
+        private System.Windows.Forms.Label lbUserName;
+        private System.Windows.Forms.Label lbpassword;
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnlogin;
