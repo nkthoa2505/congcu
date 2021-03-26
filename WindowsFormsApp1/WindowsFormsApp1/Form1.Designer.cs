@@ -30,57 +30,68 @@
         {
             this.UserName = new System.Windows.Forms.Label();
             this.password = new System.Windows.Forms.Label();
-            this.txtUsename = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UserName
             // 
             this.UserName.AutoSize = true;
-            this.UserName.Location = new System.Drawing.Point(82, 93);
+            this.UserName.Location = new System.Drawing.Point(73, 74);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(85, 20);
+            this.UserName.Size = new System.Drawing.Size(75, 17);
             this.UserName.TabIndex = 0;
             this.UserName.Text = "UserName";
-            this.UserName.Click += new System.EventHandler(this.lbPassword);
             // 
             // password
             // 
             this.password.AutoSize = true;
-            this.password.Location = new System.Drawing.Point(82, 172);
+            this.password.Location = new System.Drawing.Point(73, 138);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(77, 20);
+            this.password.Size = new System.Drawing.Size(68, 17);
             this.password.TabIndex = 1;
             this.password.Text = "password";
             // 
-            // txtUsename
+            // txtUserName
             // 
-            this.txtUsename.Location = new System.Drawing.Point(232, 87);
-            this.txtUsename.Name = "txtUsename";
-            this.txtUsename.Size = new System.Drawing.Size(100, 26);
-            this.txtUsename.TabIndex = 2;
+            this.txtUserName.Location = new System.Drawing.Point(206, 70);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(89, 22);
+            this.txtUserName.TabIndex = 2;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUsename_TextChanged);
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(232, 166);
+            this.txtPassword.Location = new System.Drawing.Point(206, 133);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 26);
+            this.txtPassword.Size = new System.Drawing.Size(89, 22);
             this.txtPassword.TabIndex = 3;
-            this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(195, 237);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Dang Nhap";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsename);
+            this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.UserName);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,8 +101,10 @@
 
         private System.Windows.Forms.Label UserName;
         private System.Windows.Forms.Label password;
-        private System.Windows.Forms.TextBox txtUsename;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Button btnlogin;
+        private System.Windows.Forms.Button button1;
     }
 }
 

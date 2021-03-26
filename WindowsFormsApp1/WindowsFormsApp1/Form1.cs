@@ -17,29 +17,26 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void lbUserName(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            {
+                string user = "hoaquang";
+                string pass = "123456";
+                if (user.Equals(txtUserName.Text) && pass.Equals(txtPassword.Text))
+                {
+                    MessageBox.Show("Dang nhap thanh cong");
+                }
+                else
+                    MessageBox.Show("Sai tai khoan hoac mat khau");
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbPassword(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextAlignChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void txtUsename_TextChanged(object sender, EventArgs e)
         {
 
         }
     }
+
+       
+    
 }
